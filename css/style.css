@@ -1,0 +1,160 @@
+:root {
+    --main-color: #fcc108;
+    --danger-color: #dc3545;
+    --gray-color: #808080;
+    --main-bg-color: #fff;
+    --text-white: #fff;
+    --text-black: #212529;
+    --mean-size: 2.5rem;
+    --big-size: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: var(--main-bg-color);
+    line-height: 1.9;
+}
+
+/* HEADER */
+header, .values-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 2% 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--gray-color);
+}
+
+.logo {
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MAIN BANNER */
+.banner-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url("../images/bakery_bg1.jpg");
+    background-position: center;
+}
+/* .banner-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+} */
+.banner-container .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-white);
+    text-align: center;
+}
+.banner-container .overlay .title {
+    font-size: var(--mean-size);
+    margin-bottom: 3%;
+    font-weight: 900;
+}
+.banner-container span {
+    color: var(--main-color);
+}
+.banner-container .overlay small {
+    display: block;
+    margin-bottom: 7%;
+    line-height: 1.5;
+}
+.banner-container .overlay a {
+    color: var(--text-white);
+    font-size: 1em;
+    font-family: Inter;
+    background: var(--main-color);
+    padding: 10px 16px;
+    min-width: 125px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* VALUES CONTAINER */
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    padding: 5% 0;
+    color: var(--text-black);
+    font-size: var(--mean-size);
+}
+.values-container .item {
+    width: 30%;
+    text-align: center;
+}
+.values-container .item > * {
+    padding-bottom: 5%;
+}
+.values-container .item h3 {
+    color: var(--text-black);
+}
+.values-container .item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* BANNER CONTAINER ADVICE */
+.banner-container.advice {
+    height: 400px;
+}
+.banner-container.advice img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* BANNER BEST SALES */
+.best-sale-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+}
+.best-sale-container .item {
+    width: 30.33%;
+}
+.best-sale-container small {
+    color: var(--danger-color);
+    text-transform: uppercase;
+}
+.best-sale-container .item a {
+    background-color: var(--danger-color);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 5px 40px;
+    display: inline-block;
+    min-width: 50px;
+    border-radius: 5px;
+}
